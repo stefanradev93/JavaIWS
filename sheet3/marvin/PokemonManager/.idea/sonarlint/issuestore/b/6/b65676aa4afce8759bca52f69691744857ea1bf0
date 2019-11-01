@@ -1,0 +1,5 @@
+
+squid:UselessImportCheck"QRemove this unnecessary import: java.lang classes are always implicitly imported.(‘…๛ýÿÿÿÿ8ีýมนโ-
+V
+squid:S106)"9Replace this use of System.out or System.err by a logger.(๒ญ8’ฃจนโ-
+squid:S1450	"\Remove the "winnerTrainer" field and declare it as a local variable in the relevant methods.(ะสศýÿÿÿÿ8ฟพนโ-
