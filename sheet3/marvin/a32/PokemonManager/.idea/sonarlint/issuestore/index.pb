@@ -15,3 +15,9 @@ m
 =app/src/main/java/de/uhd/ifi/pokemonmanager/data/Pokemon.java,b\0\b078bebb3f5c065fde687948e5db790506f29b31
 p
 @app/src/main/java/de/uhd/ifi/pokemonmanager/ui/MainActivity.java,3\5\35467ad73739044c613e42ec8f0fa4fc6dd9563c
+{
+Kapp/src/main/java/de/uhd/ifi/pokemonmanager/adapter/SimpleStringHolder.java,9\f\9ff189334191840eb481f8dbc943453a2eca3b70
+|
+Lapp/src/main/java/de/uhd/ifi/pokemonmanager/adapter/SimpleStringAdapter.java,5\f\5f7c9eda4883faa69d51a4a797159d18e98d81c2
+[
++app/src/main/res/layout/listitem_string.xml,b\a\baada55967c2b473583e962643d3ad63e8003b15

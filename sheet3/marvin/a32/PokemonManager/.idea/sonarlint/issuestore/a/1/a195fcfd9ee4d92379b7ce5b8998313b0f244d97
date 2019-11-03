@@ -1,10 +1,9 @@
 
-squid:S1450"\Remove the "winnerTrainer" field and declare it as a local variable in the relevant methods.(ĞÊÈ‰ıÿÿÿÿ8¿¾¹â-
 V
-squid:S106""9Replace this use of System.out or System.err by a logger.(òóœÔ8ÙÛ›ºâ-
+squid:S106/"9Replace this use of System.out or System.err by a logger.(òš­™8’£¨¹â-
 V
-squid:S106-"9Replace this use of System.out or System.err by a logger.(òš­™8’£¨¹â-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(„ìïúÿÿÿÿ8¼¤¥ºâ-
+squid:S106$"9Replace this use of System.out or System.err by a logger.(òóœÔ8ÙÛ›ºâ-
 U
-squid:S106"9Replace this use of System.out or System.err by a logger.(ŠÒÓ8·‹¥ºâ-
+squid:S106"9Replace this use of System.out or System.err by a logger.(ŠÒÓ8·‹¥ºâ-
+[
+squid:S106 "9Replace this use of System.out or System.err by a logger.(„ìïúÿÿÿÿ8¼¤¥ºâ-

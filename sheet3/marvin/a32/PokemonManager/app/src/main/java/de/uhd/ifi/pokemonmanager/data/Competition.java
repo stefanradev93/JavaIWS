@@ -5,11 +5,13 @@ import java.util.Date;
 
 public class Competition extends Swap {
 
-    private Trainer winnerTrainer;
+
 
     @Override
     public void execute(Pokemon sourcePokemon, Pokemon targetPokemon){
+
         if (sourcePokemon.getTrainer() != targetPokemon.getTrainer()) {
+            Trainer winnerTrainer;
             // swapping is allowed
             // store Pokemons and Trainers in the competition
             this.sourcePokemon = sourcePokemon;
@@ -29,13 +31,13 @@ public class Competition extends Swap {
             System.out.println(sourceTrainer + " with " + sourcePokemon.getName() + ": " + sourceScore);
             System.out.println(targetTrainer + " with " + targetPokemon.getName() + ": " + targetScore);
 
-            this.winnerTrainer = (sourceScore > targetScore ? sourceTrainer : targetTrainer);
+            winnerTrainer = (sourceScore > targetScore ? sourceTrainer : targetTrainer);
 
             System.out.println("Winner is " + winnerTrainer);
 
             // reassign the Pokemons to the winning trainer
-            this.winnerTrainer.addPokemon(targetPokemon);
-            this.winnerTrainer.addPokemon(sourcePokemon);
+            winnerTrainer.addPokemon(targetPokemon);
+            winnerTrainer.addPokemon(sourcePokemon);
             // store the Swap in Pokemons Swap history
             sourcePokemon.addCompetition(this);
             targetPokemon.addCompetition(this);
