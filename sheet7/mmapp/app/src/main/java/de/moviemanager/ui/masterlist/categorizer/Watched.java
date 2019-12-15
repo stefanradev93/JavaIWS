@@ -66,5 +66,4 @@ public class Watched<T extends Nameable> extends Categorizer<String, T> {
     public int compareContent(final ContentElement<T> element1, final ContentElement<T> element2) {
         return contentComparator.compare(element1, element2);
     }
-
 }
