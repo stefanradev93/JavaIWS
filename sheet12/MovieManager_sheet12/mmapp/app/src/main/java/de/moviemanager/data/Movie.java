@@ -138,6 +138,8 @@ public class Movie extends Portrayable {
 
     public void setLendDate(Date lendDate) { this.lendDate = normDate(lendDate); }
 
+    public boolean isLent() {return this.lendDate != null;}
+
     public int getRuntime() {
         return runtime;
     }

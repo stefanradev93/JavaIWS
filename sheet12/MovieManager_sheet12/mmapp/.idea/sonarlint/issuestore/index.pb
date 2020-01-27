@@ -179,3 +179,13 @@ i
 9app/src/test/java/de/moviemanager/util/FileUtilsTest.java,4\7\470f7b15f4328becd434f62f193a7b4c70a8a3c1
 k
 ;app/src/test/java/de/moviemanager/util/RatingUtilsTest.java,9\4\942de4ea65433c60f220d92e40adf7bdeb65b6bb
+j
+:app/src/main/res/layout-v24/activity_movie_detail_edit.xml,8\8\88115e2fed06e6787f4b2780bf3a40893e5a29bc
+[
++app/src/main/res/layout/activity_master.xml,6\2\62e6099259776289f265c9a3fa5a2b5fd4cacc8c
+p
+@app/src/main/java/de/moviemanager/ui/view/DateSelectionView.java,d\a\dad37eb5f0990221a764363c4267e2cb8e1db824
+e
+5app/src/test/java/de/moviemanager/data/MovieTest.java,e\0\e084665f02ad0ad898a027d1e2a9e743ab112b70
+i
+9app/src/test/java/de/moviemanager/data/PerformerTest.java,3\c\3cb343c98180eeeda52adb6c1b6b141e1ef38f12
