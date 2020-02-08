@@ -189,3 +189,7 @@ e
 5app/src/test/java/de/moviemanager/data/MovieTest.java,e\0\e084665f02ad0ad898a027d1e2a9e743ab112b70
 i
 9app/src/test/java/de/moviemanager/data/PerformerTest.java,3\c\3cb343c98180eeeda52adb6c1b6b141e1ef38f12
+f
+6app/src/main/res/layout/activity_movie_detail_edit.xml,4\6\4658df8ec0715c17a6e15e22e0fd35c1efe9a06c
+t
+Dapp/src/main/java/de/moviemanager/ui/dialog/DateSelectionDialog.java,9\0\90a3412aca26aa4af06d9e17a41f375188c772df

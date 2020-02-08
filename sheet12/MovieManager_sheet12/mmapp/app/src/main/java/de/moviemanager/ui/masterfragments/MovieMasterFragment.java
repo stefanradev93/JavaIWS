@@ -16,11 +16,17 @@ import de.moviemanager.ui.masterfragments.onetimetask.OneTimeTaskExecutorRudimen
 import de.moviemanager.ui.masterlist.categorizer.Alphabetical;
 import de.moviemanager.ui.masterlist.categorizer.OrderGroup;
 import de.moviemanager.ui.masterlist.categorizer.Rated;
+import de.moviemanager.ui.masterlist.categorizer.Watched;
+import de.moviemanager.ui.masterlist.categorizer.Lent;
+
 import de.moviemanager.util.RatingUtils;
+import de.util.DateUtils;
 
 import static de.moviemanager.ui.detail.PortrayableDetailEditActivity.RESULT_PIPELINE;
 import static de.moviemanager.util.RatingUtils.calculateOverallRating;
 import static de.moviemanager.util.RatingUtils.ratingToString;
+
+import static de.util.DateUtils.dateToText;
 
 public class MovieMasterFragment extends PortrayableMasterFragment<Movie> {
     private PortrayableRVAdapter<Movie> adapter;
@@ -42,6 +48,16 @@ public class MovieMasterFragment extends PortrayableMasterFragment<Movie> {
         );
         orders.addOrder(overallRating,
                 new Rated<>(overallRating, RatingUtils::calculateOverallRating),
+                nameContainsInput
+        );
+        orders.addOrder("Watched",
+                new Watched<>("Watched on",
+                        m -> dateToText(m.getWatchDate())),
+                        nameContainsInput
+        );
+        orders.addOrder("Lent",
+                new Lent<>("Lent due",
+                        m -> dateToText(m.getLendDate())),
                 nameContainsInput
         );
     }

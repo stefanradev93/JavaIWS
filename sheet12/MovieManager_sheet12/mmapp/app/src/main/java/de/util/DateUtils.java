@@ -54,6 +54,8 @@ public enum  DateUtils {
         return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
     }
 
+
+
     public static int differenceInYears(final Date date1, final Date date2) {
         final Calendar calendar1 = Calendar.getInstance();
         calendar1.setTime(date1);

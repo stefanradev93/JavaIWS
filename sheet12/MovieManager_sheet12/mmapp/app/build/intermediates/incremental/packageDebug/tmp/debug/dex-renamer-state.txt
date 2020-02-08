@@ -1,7 +1,7 @@
-#Mon Jan 27 13:04:12 CET 2020
-base.0=C\:\\Users\\Work\\Downloads\\MovieManager_sheet12\\mmapp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Tue Feb 04 16:25:43 CET 2020
+base.0=C\:\\Users\\Work\\Documents\\GitHub\\JavaIWS\\sheet12\\MovieManager_sheet12\\mmapp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\Work\\Downloads\\MovieManager_sheet12\\mmapp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=C\:\\Users\\Work\\Documents\\GitHub\\JavaIWS\\sheet12\\MovieManager_sheet12\\mmapp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
