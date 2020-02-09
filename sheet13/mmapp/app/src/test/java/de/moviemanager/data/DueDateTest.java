@@ -3,7 +3,9 @@ package de.moviemanager.data;
 import org.junit.jupiter.api.Test;
 
 import java.text.SimpleDateFormat;
-
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import de.util.DateUtils;
 
@@ -48,73 +50,38 @@ public class DueDateTest {
 
     @Test
     void testIsLoanedWithExistingDueDate() {
-        final Movie m1 = new Movie(0);
-
-
-        m1.setDueDate(DateUtils.textToDate("dd.MM.YYYY","22.10.2020"));
-
-        assertEquals(DateUtils.textToDate("dd.MM.YYYY","22.10.2020"),m1.getDueDate());
-
-
-
-
-        assertTrue(m1.isLoaned());
-
-
-
-
+        final Movie m = new Movie(0);
+        m.setDueDate(DateUtils.textToDate("dd.MM.YYYY","22.10.2020"));
+        assertEquals(DateUtils.textToDate("dd.MM.YYYY","22.10.2020"),m.getDueDate());
+        assertTrue(m.isLoaned());
     }
 
     @Test
     void testIsLoanedWithoutExistingDueDate() {
-        final Movie m1 = new Movie(0);
 
-
-
-
-        m1.setDueDate(null);
-
-
-        assertNull(m1.getDueDate());
-
-        assertFalse(m1.isLoaned());
-
-
+        final Movie m = new Movie(0);
+        m.setDueDate(null);
+        assertNull(m.getDueDate());
+        assertFalse(m.isLoaned());
     }
 
     @Test
-    void testIsOverdueWithExistingDueDateandOverdue() {
-        final Movie m1 = new Movie(0);
+    void testIsOverdueWithExistingDueDateAndOverdue() {
 
+        final Movie m = new Movie(0);
         final SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
-
-
-        m1.setDueDate(DateUtils.textToDate(formatter,"28-01-2010"));
-
-        assertEquals(DateUtils.textToDate(formatter,"28-01-2010"),m1.getDueDate());
-
-
-
-
-        assertTrue(m1.isOverdue());
-
-
-
-
+        m.setDueDate(DateUtils.textToDate(formatter,"28-01-2010"));
+        assertEquals(DateUtils.textToDate(formatter,"28-01-2010"),m.getDueDate());
+        assertTrue(m.isOverdue());
     }
 
     @Test
-    void testIsOverdueWithExistingDueDateandNotOverdue() {
-        final Movie m1 = new Movie(0);
+    void testIsOverdueWithExistingDueDateAndNotOverdue() {
 
+        final Movie m = new Movie(0);
         final SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
-
-
-
-
-        m1.setDueDate(DateUtils.textToDate(formatter,"28-02-2020"));
-
-        assertFalse(m1.isOverdue());
+        m.setDueDate(DateUtils.textToDate(formatter,"28-02-2020"));
+        assertFalse(m.isOverdue());
 
 
 
@@ -122,16 +89,11 @@ public class DueDateTest {
 
     @Test
     void testIsOverdueWithoutExistingDueDate() {
-        final Movie m1 = new Movie(0);
-        m1.setDueDate(null);
 
-
-        assertNull(m1.getDueDate());
-
-        assertFalse(m1.isOverdue());
-
-
-
+        final Movie m = new Movie(0);
+        m.setDueDate(null);
+        assertNull(m.getDueDate());
+        assertFalse(m.isOverdue());
     }
 
 
